@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Coffee Shop</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* This is hedar section .*/
+
+		header {
+			height: 800px;
+			width: 100%;
+			background: url("images/c1.jpg");
+			background-repeat: no-repeat;
+            background-size: cover;
+		}
+
+		.nav {
+			height: 100px;
+			width: 100%;
+			/*border: 2px solid green;*/
+			background-color: black;
+			opacity: .8;
+		}
+
+		.nav .nav-items {
+			height: 100px;
+			width: 90%;
+			/*border: 2px solid red;*/
+			margin: auto;
+
+		}
+
+		.nav-items ul {
+			float: right;
+			margin-right: 20px;
+		}
+
+		.nav-items li {
+			float: left;
+			width: 140px;
+			line-height: 100px;
+			list-style-type: none;
+			font-size: 21px;
+			text-align: center;
+
+		}
+
+		.nav-items li:hover {
+			background-color: lawngreen;
+			font-size: 25px;
+			border-radius: 5px;
+		}
+
+		.nav-items ul li a {
+			color: white;
+		}
+
+		.logo {
+			/*border: solid skyblue;*/
+			display: inline-block;
+			width: 20%;
+			font-size: 25px;
+			height: 100px;
+			position: absolute;
+		}
+
+		.logo img {
+			cursor: pointer;
+			height: 100px;
+			opacity: .9;
+			border-radius: 10px;
+
+		}
+
+		.btext {
+			margin-top: 15%;
+			margin-left: 10%;
+			height: 50px;
+			width: 50%;
+			opacity: .5;
+
+		}
+
+		.btext p {
+			font-size: 50px;
+			color: yellow;
+			font-family: Comic Sans MS;
+		}
+
+		/*This is end of the header section*/
+
+		/*Now this is about section*/
+		.sec {
+			padding-top: 20px;
+			height: 350px;
+
+		}
+
+		.sec .about {
+			text-align: center;
+			font-family: Consolas;
+			font: 30px;
+			width: 60%;
+			margin-left: 20%;
+			margin-top: 30px;
+			color: blue;
+			font-size: 20px;
+		}
+
+		.sec .about h1 {
+			margin-bottom: 15px;
+		}
+
+		/*About section is end here.*/
+
+		/*This is container section*/
+		.container {
+			width: 95%;
+			height: 500px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.container .img {
+			height: 500px;
+			width: 90%;
+			/*border: solid green;*/
+			padding-left: 30px;
+		}
+
+		.img img {
+			width: 95%;
+		}
+
+		.container .about-img {
+
+			width: 100%;
+			height: 500px;
+			font-size: 20px;
+
+		}
+
+		.about-img h1 {
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.about-img p {
+			padding-top: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		/*Container Section is end here.*/
+
+		/*now new element section.*/
+		.list {
+			height: 500px;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			/*border: 1px solid red;*/
+			/*background-image: url("images/b.jpg");*/
+			color: green;
+		}
+
+		.list .a {
+			height: 500px;
+			width: 95%;
+			/*border:1px solid green;*/
+			/*text-align: center;*/
+			font-size: 20px;
+			list-style: none;
+			list-style-type: none;
+
+		}
+
+		/*New element section is ends here.*/
+
+		.login {
+			height: 300px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+		}
+
+		.login .social {}
+
+		.social img {
+			margin-top: 10px;
+			height: 50px;
+			border-radius: 10px;
+			margin-left: 10px;
+		}
+
+		.form input {
+			margin-top: 10px;
+			font-size: 18px;
+			border: 1px solid orange;
+		}
+	</style>
+</head>
+
+
+<!-- This is for the body section of webpage. -->
+
+<body>
+	<!-- Header section of body starts here. -->
+	<header>
+		<div class="nav">
+			<div class="nav-items">
+				<div class="logo"><img src="images/logo.webp">
+				</div>
+
+				<ul>
+					<li><a href="#" style="text-decoration: none">HOME</a> </li>
+					<li><a href="#" style="text-decoration: none">MENU</a></li>
+					<li><a href="#services" style="text-decoration: none">SERVICES</a></li>
+					<li><a href="#" style="text-decoration: none">GALLERY</a></li>
+					<li><a href="#section-about" style="text-decoration: none">ABOUT US</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="btext">
+			<p>Coffee,the favorite drink of civilized world.</p>
+		</div>
+	</header>
+	<!-- This is end of heder section of body. -->
+
+	<!-- Here starts the about section.-->
+
+	<section class="sec">
+		<div class="about" id="section-about">
+			<h1>Our Coffee Shop</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<!-- End of about section -->
+
+	<!-- This is container section -->
+	<section class="container">
+		<div class="img">
+			<img src="images/logo.webp">
+		</div>
+
+		<div class="about-img">
+			<h1 style="color:green;">About image</h1>
+			<p style="color: green; font-family:Consolas;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+				do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+	</section>
+
+	<!--  this is next element -->
+	<div class="list">
+
+		<!-- This class is about our services. -->
+		<div class="a" id="services">
+			<h1 style="text-align: center; color: green;">SERVICES</h1>
+			<ul style="list-style-type:none; text-align: center;">
+				<li>CALL/DELIVERY SERVICE
+				<li><br>
+				<li>ROUTED SERVICE</li><br>
+				<li>PRE-WRITE SERVICE</li><br>
+				<li>FULL SERVICE</li><br>
+				<li> SERVICE</li><br>
+				<li>WHOLESALE</li><br>
+				<li>CATERING</li><br>
+
+			</ul>
+		</div>
+		<!-- This class is about our drinks varities. -->
+		<div class="a">
+			<h1 style="text-align: center; color: green;">COFFEE</h1>
+			<ul style="list-style-type: none;  text-align: center;">
+				<li>Espresso</li>
+				<li>Cafe au lait</li>
+				<li>Caffe Americano</li>
+				<li>Flat white</li>
+				<li>Frappe</li>
+				<li>Cappuccino</li>
+				</ol>
+			</ul>
+			<!-- List of coffee is end. -->
+
+			<!-- This is for  list of teas. -->
+			<h2 style="text-align:center;">TEAS</h2>
+			<ul style="list-style-type: none; text-align:center;">
+				<li>Oolong Tea</li>
+				<li>White Tea</li>
+				<li>Black Tea</li>
+				<li>Green Tea</li>
+				<li>Herbal Tea</li>
+
+			</ul>
+
+			<!-- This is for other drinks. -->
+			<h1 style="text-align:center;">OTHERS DRINKS</h1>
+			<ul style="list-style-type:none; text-align:center;">
+				<li>Smoothies</li>
+				<li>Hot Chocolate</li>
+				<li>Golden Milk</li>
+				<li>Apple Juice</li>
+			</ul>
+		</div>
+		<!-- types of drink section is ended here. -->
+
+		<!-- This class is for the opening hours of coffee shop -->
+		<div class="a">
+			<h1 style="text-align:center;">OPENING HOURS</h1><br>
+			<ul style="list-style-type:none;  text-align: center;">
+				<li>MONDAY 7:00AM - 5:00PM</li><br>
+				<li>TUESDAY 7:00AM - 5:00PM</li><br>
+				<li>WEDNESDAY 7:00AM - 5:00PM</li><br>
+				<li>THURSDAY 7:00AM - 5:00PM</li><br>
+				<li>FRIDAY 7:00AM - 5:00PM</li><br>
+				<li>SATURDAY 7:00AM - 5:00PM</li><br>
+				<li>SUNDAY 7:00AM - 5:00PM</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Here's the end of our element section. -->
+
+	<!-- This is the division for login and social midea links. -->
+
+	<div class="login">
+		<div class="social">
+			<h1 style="color:green"> Follow Us</h1>
+			<img src="images/d4.png">
+			<img src="images/d5.png">
+			<img src="images/d2.png">
+			<img src="images/i5.png">
+			<img src="images/i1.png">
+		</div>
+		<div class="form" action="#">
+			<h1 style="text-align:center; color:green;">Let us know about you</h1>
+			<form style="text-align:center">
+				<label>Name</label> <input type="text" name="name" required placeholder="Enter your name"><br><br>
+				<label>Email</label> <input type="email" name="email" required placeholder="Enter your email"><br><br>
+				<label>Age</label> <input type="date" name="age"><br><br>
+				<label>Gander</label> <input type="radio" name="gender">Male<input type="radio"
+					name="gender">Female<br><br>
+				<input type="submit" name="submit">
+		</div>
+		<br><br><a href="#">Go to top</a>
+	</div>
+
+</body>
+
+</html>
